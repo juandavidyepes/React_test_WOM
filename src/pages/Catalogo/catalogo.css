@@ -1,0 +1,23 @@
+.products {
+  width: 100%;
+  margin: 0 0 0 270px;
+  padding: 75px 91px 70px;
+  display: grid;
+  grid-template-columns: repeat(5, 242px);
+  grid-template-rows: repeat(auto, 282px);
+  column-gap: 4%;
+  row-gap: 66px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .products {
+    width: 320px;
+    margin: 100px auto 40px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 149px);
+    grid-template-rows: repeat(auto, 166px);
+    column-gap: 5%;
+    row-gap: 29px;
+  }
+}

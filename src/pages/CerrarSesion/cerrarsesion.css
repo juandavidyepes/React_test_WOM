@@ -1,0 +1,108 @@
+.salute {
+  margin: 0 0 0 239px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.face {
+  width: 181px;
+  height: 181px;
+}
+
+.salute .title {
+  font: var(--unnamed-font-style-normal) normal normal 34px/46px
+    var(--unnamed-font-family-segoe-ui);
+  text-align: center;
+  font: normal normal normal 34px/46px Segoe UI;
+  letter-spacing: 0.01px;
+  color: #828282;
+  text-shadow: 6px 9px 15px #0000000f;
+  margin: 0;
+  min-height: auto;
+}
+
+.subtitle {
+  font: var(--unnamed-font-style-normal) normal normal 22px/30px
+    var(--unnamed-font-family-segoe-ui);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--naranja);
+  text-align: center;
+  font: normal normal normal 22px/30px Segoe UI;
+  letter-spacing: 0px;
+  color: #fe4518;
+  text-shadow: 6px 9px 15px #0000000f;
+}
+
+@media only screen and (max-width: 1000px) {
+  .salute {
+    margin: 0 0 0 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .face {
+    width: 181px;
+    height: 181px;
+  }
+
+  .exit {
+    width: 105.84px;
+    height: 82.42px;
+  }
+
+  .btn {
+    margin: 56px auto 0;
+    color: white;
+    border: 0;
+    width: 284px;
+    height: 51px;
+    background: transparent
+      linear-gradient(91deg, var(--naranja) 0%, #df2330 100%) 0% 0% no-repeat
+      padding-box;
+    background: transparent linear-gradient(91deg, #fe4518 0%, #df2330 100%) 0%
+      0% no-repeat padding-box;
+    opacity: 1;
+
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-400)
+      var(--unnamed-font-size-16) / var(--unnamed-line-spacing-21)
+      var(--unnamed-font-family-segoe-ui);
+    text-align: center;
+    font: normal normal 400 16px/21px Segoe UI;
+    letter-spacing: 3.2px;
+    color: #ffffff;
+  }
+
+  .salute .title {
+    font: var(--unnamed-font-style-normal) normal normal 34px/46px
+      var(--unnamed-font-family-segoe-ui);
+    text-align: center;
+    font: normal normal normal 14px/46px Segoe UI;
+    letter-spacing: 0.01px;
+    color: #828282;
+    text-shadow: 6px 9px 15px #0000000f;
+    margin: 0;
+    min-height: auto;
+  }
+
+  .salute .titleExit {
+    font-weight: bold;
+  }
+
+  .subtitle {
+    font: var(--unnamed-font-style-normal) normal normal 22px/30px
+      var(--unnamed-font-family-segoe-ui);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--naranja);
+    text-align: center;
+    font: normal normal normal 16px/30px Segoe UI;
+    letter-spacing: 0px;
+    color: #fe4518;
+    text-shadow: 6px 9px 15px #0000000f;
+  }
+}

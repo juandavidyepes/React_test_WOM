@@ -1,0 +1,45 @@
+:root {
+
+/* Colors: */
+--naranja: #FE4518;
+
+/* Font/text values */
+--unnamed-font-family-segoe-ui: Segoe UI;
+--unnamed-font-style-normal: normal;
+--unnamed-font-weight-400: 400px;
+--unnamed-font-weight-600: 600px;
+--unnamed-font-size-16: 16px;
+--unnamed-font-size-20: 20px;
+--unnamed-character-spacing-0: 0px;
+--unnamed-line-spacing-21: 21px;
+--unnamed-line-spacing-27: 27px;
+}
+
+/* Character Styles */
+.corrido-16 {
+font-family: var(--unnamed-font-family-segoe-ui);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-400);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-21);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-828282);
+}
+.sub-20 {
+font-family: var(--unnamed-font-family-segoe-ui);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-600);
+font-size: var(--unnamed-font-size-20);
+line-height: var(--unnamed-line-spacing-27);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-828282);
+}
+.sub-20 {
+font-family: var(--unnamed-font-family-segoe-ui);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-600);
+font-size: var(--unnamed-font-size-20);
+line-height: var(--unnamed-line-spacing-27);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-fe4518);
+}

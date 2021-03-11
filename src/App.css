@@ -1,38 +1,278 @@
+:root {
+  /* Colors: */
+  --naranja: #fe4518;
+
+  /* Font/text values */
+  --unnamed-font-family-segoe-ui: Segoe UI;
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-400: 400px;
+  --unnamed-font-weight-600: 600px;
+  --unnamed-font-size-16: 16px;
+  --unnamed-font-size-20: 20px;
+  --unnamed-character-spacing-0: 0px;
+  --unnamed-line-spacing-21: 21px;
+  --unnamed-line-spacing-27: 27px;
+}
+
 .App {
-  text-align: center;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 1080px;
+  background: transparent url('./assets/Desktop/Login/Fotofondo.png') 0% 0%
+    no-repeat padding-box;
+  opacity: 1;
+  font-family: 'Segoe UI';
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App img {
+  content: url('./assets/Desktop/Login/Grupo2.png');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login {
+  background-color: white;
+  width: 498px;
+  height: 581px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 82px 0 42.67px;
+}
+
+.formTitle {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600)
+    var(--unnamed-font-size-20) / var(--unnamed-line-spacing-27)
+    var(--unnamed-font-family-segoe-ui);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal 600 20px/27px Segoe UI;
+  letter-spacing: 0px;
+  color: #707070;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 80%;
+}
+
+.formInput {
+  border: 0;
+  border-bottom: 1px solid #bbbbbb;
+  margin-top: 39px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-400)
+    var(--unnamed-font-size-16) / var(--unnamed-line-spacing-21)
+    var(--unnamed-font-family-segoe-ui);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal 400 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+.formInput::placeholder {
+  color: #c5c5c5;
+}
+
+.formInput:focus {
+  outline: none;
+}
+
+.btnForgot {
+  margin-top: 29px;
+  height: 21px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-400)
+    var(--unnamed-font-size-16) / var(--unnamed-line-spacing-21)
+    var(--unnamed-font-family-segoe-ui);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal 400 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  color: #1592e6;
+  opacity: 1;
+}
+
+.submitBtn {
+  margin: 56px auto 0;
   color: white;
+  border: 0;
+  width: 306px;
+  height: 51px;
+  background: transparent
+    linear-gradient(91deg, var(--naranja) 0%, #df2330 100%) 0% 0% no-repeat
+    padding-box;
+  background: transparent linear-gradient(91deg, #fe4518 0%, #df2330 100%) 0% 0%
+    no-repeat padding-box;
+  opacity: 1;
+
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-400)
+    var(--unnamed-font-size-16) / var(--unnamed-line-spacing-21)
+    var(--unnamed-font-family-segoe-ui);
+  text-align: center;
+  font: normal normal 400 16px/21px Segoe UI;
+  letter-spacing: 3.2px;
+  color: #ffffff;
 }
 
-.App-link {
-  color: #61dafb;
+.wrongPassword {
+  padding: 9px 0 32.5px;
+  margin: 0;
+  width: 306px;
+  height: 16px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-400)
+    12px/16px var(--unnamed-font-family-segoe-ui);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  font: normal normal 400 12px/16px Segoe UI;
+  letter-spacing: 0px;
+  color: #df2330;
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btnContainer {
+  border-top: solid 1px #707070;
+  padding-top: 35px;
+}
+
+.btnCreate {
+  background-color: white;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  opacity: 1;
+  width: 306px;
+  height: 51px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .App {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    opacity: 1;
+    font-family: 'Segoe UI';
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App img {
+    content: url('./assets//Mobile/Grupo\ 643.svg');
+    width: 78.94px;
+    height: 33.86px;
+    margin: 54.74px 0 0 0;
+  }
+
+  .login {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 49.4px 70px 55.01px;
+  }
+
+  .formTitle {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600)
+      var(--unnamed-font-size-20) / var(--unnamed-line-spacing-27)
+      var(--unnamed-font-family-segoe-ui);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal 600 20px/27px Segoe UI;
+    letter-spacing: 0px;
+    color: #707070;
+  }
+
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 80%;
+    width: 100%;
+  }
+
+  .formInput {
+    border: 0;
+    border-bottom: 1px solid #bbbbbb;
+    margin-top: 39px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-400)
+      var(--unnamed-font-size-16) / var(--unnamed-line-spacing-21)
+      var(--unnamed-font-family-segoe-ui);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal 400 16px/21px Segoe UI;
+    letter-spacing: 0px;
+    opacity: 1;
+  }
+
+  .btnForgot {
+    margin-top: 29px;
+    height: 21px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-400)
+      var(--unnamed-font-size-16) / var(--unnamed-line-spacing-21)
+      var(--unnamed-font-family-segoe-ui);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: center;
+    font: normal normal 400 16px/21px Segoe UI;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+  }
+
+  .submitBtn {
+    margin-top: 56px;
+    color: white;
+    border: 0;
+    width: 219px;
+    height: 51px;
+    background: #fe4518;
+    opacity: 1;
+
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-400)
+      var(--unnamed-font-size-16) / var(--unnamed-line-spacing-21)
+      var(--unnamed-font-family-segoe-ui);
+    text-align: center;
+    font: normal normal 400 16px/21px Segoe UI;
+    letter-spacing: 3.2px;
+    color: #ffffff;
+  }
+
+  .wrongPassword {
+    padding: 9px 0 32.5px;
+    margin: 0;
+    width: 100%;
+    height: 16px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-400)
+      12px/16px var(--unnamed-font-family-segoe-ui);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    font: normal normal 400 12px/16px Segoe UI;
+    letter-spacing: 0px;
+    color: #df2330;
+    opacity: 1;
+  }
+
+  .btnContainer {
+    width: 100%;
+    border-top: solid 1px #707070;
+    padding-top: 35px;
+  }
+
+  .btnCreate {
+    background-color: white;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    opacity: 1;
+    width: 100%;
+    height: 51px;
+    margin: 0 8px 0;
   }
 }
